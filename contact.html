@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Payanam</title>
+  <!-- my custom css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; background-color: #f9f9f9;">
+
+  <!-- top menu -->
+  <div style="background-color: #1a3c6e; padding: 15px; color: white;">
+    <h2 style="display: inline; margin-left: 20px;">Payanam</h2>
+    <span style="float: right; margin-right: 20px; margin-top: 5px;">
+      <a href="index.html" style="color: white; text-decoration: none;">Home</a> | 
+      <a href="routes.html" style="color: white; text-decoration: none;">Routes</a> | 
+      <a href="about.html" style="color: white; text-decoration: none;">About</a> | 
+      <a href="contact.html" style="color: orange; text-decoration: none;">Contact Us</a>
+    </span>
+  </div>
+
+  <br>
+
+  <center>
+    <h1>Contact Us</h1>
+    <p>Need help with your bus booking? Send us a message below.</p>
+  </center>
+
+  <hr style="width: 80%;">
+
+  <div style="margin: 20px 50px;">
+    
+    <!-- left side details -->
+    <div style="float: left; width: 40%;">
+      <h3>Our Details</h3>
+      <p><b>Phone:</b> 98765 43210 <br>
+      <i>(call between 8am to 8pm only)</i></p>
+      
+      <p><b>Email:</b> support@payanam.in</p>
+      
+      <p><b>Office Address:</b><br>
+      123, MG Road,<br>
+      Bangalore - 560001</p>
+
+      <!-- will add google maps embed here later -->
+    </div>
+
+    <!-- right side form -->
+    <div style="float: right; width: 50%; background-color: white; padding: 20px; border: 1px solid #ccc;">
+      <h3>Send a Message</h3>
+      
+      <form action="submit.html" method="POST">
+        
+        <label>Your Name:</label><br>
+        <input type="text" name="fullname" style="width: 90%; padding: 5px;"><br><br>
+
+        <label>Email ID:</label><br>
+        <input type="email" name="email" style="width: 90%; padding: 5px;"><br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="text" name="mobile" style="width: 90%; padding: 5px;"><br><br>
+
+        <label>Why are you contacting us?</label><br>
+        <select style="width: 93%; padding: 5px;">
+          <option>-- Select --</option>
+          <option>Bus delayed</option>
+          <option>Refund problem</option>
+          <option>Other</option>
+        </select><br><br>
+
+        <label>Message:</label><br>
+        <textarea rows="4" style="width: 90%; padding: 5px;"></textarea><br><br>
+
+        <input type="submit" value="Submit Details" style="background-color: orange; border: none; padding: 10px 20px; cursor: pointer;">
+      </form>
+    </div>
+
+    <div style="clear: both;"></div>
+
+  </div>
+
+  <br><br><br>
+
+  <!-- bottom footer -->
+  <div style="background-color: #333; color: white; text-align: center; padding: 15px; margin-top: 50px;">
+    <p>Payanam Bus Bookings</p>
+    <p style="font-size: 12px;">Copyright 2024. Created for college mini-project.</p>
+  </div>
+
+</body>
+</html>

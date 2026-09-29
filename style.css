@@ -1,0 +1,121 @@
+/* Universal reset to remove default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --h1-font: 4rem;
+    --h5-font: 18px;
+    --p-font: 1rem;
+}
+
+body {
+    background: #15191a;
+    color: whitesmoke;
+}
+
+/* FIXED: Changed 'head' selector to 'header' */
+header {
+    padding: 27px 11%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+
+.logo {
+    font-size: 33px;
+    font-weight: 700;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none; /* Removes underline from the logo link */
+}
+
+.logo span {
+    color: #f8b600;
+}
+
+/* ADDED: Styles to make the list horizontal and remove bullets */
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 35px; /* Spaces out the menu items */
+}
+
+/* ADDED: Styles to remove default blue link styling */
+.navlinks a {
+    text-decoration: none;
+    color: #8b8b99; /* Matches the purplish/grey color from the tutorial image */
+    font-size: var(--p-font);
+    transition: all 0.3s ease;
+}
+
+.navlinks a:hover {
+    color: #f8b600;
+}
+
+/* ADDED: Layout for social icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 40px; 
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #8b8b99;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f8b600;
+}
+
+#menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+/*HOME SECTION*/
+select{
+    padding: 70px 11% 60px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:url(build.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#bod{
+    background-image: url(about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tri{
+    background-image: url(trip.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bod{
+    background-image: url(sign.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bac{
+    background-image: url(about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
